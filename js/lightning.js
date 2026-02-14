@@ -44,6 +44,7 @@ window.addEventListener("load", () => {
     uniform float uSpeed;
     uniform float uIntensity;
     uniform float uSize;
+    `;
 
     #define OCTAVE_COUNT 10
 
@@ -104,7 +105,7 @@ window.addEventListener("load", () => {
     void main() {
       mainImage(gl_FragColor, gl_FragCoord.xy);
     }
-  \`;
+  ;
 
   const vertexShader = compileShader(vertexShaderSource, gl.VERTEX_SHADER);
   const fragmentShader = compileShader(fragmentShaderSource, gl.FRAGMENT_SHADER);
