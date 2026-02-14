@@ -44,9 +44,9 @@ window.addEventListener("load", () => {
     uniform float uSpeed;
     uniform float uIntensity;
     uniform float uSize;
-    `;
 
     #define OCTAVE_COUNT 10
+    
 
     vec3 hsv2rgb(vec3 c) {
       vec3 rgb = clamp(abs(mod(c.x * 6.0 + vec3(0.0,4.0,2.0), 6.0) - 3.0) - 1.0, 0.0, 1.0);
@@ -105,7 +105,7 @@ window.addEventListener("load", () => {
     void main() {
       mainImage(gl_FragColor, gl_FragCoord.xy);
     }
-  ;
+  `};
 
   const vertexShader = compileShader(vertexShaderSource, gl.VERTEX_SHADER);
   const fragmentShader = compileShader(fragmentShaderSource, gl.FRAGMENT_SHADER);
