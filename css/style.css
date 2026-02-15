@@ -50,14 +50,13 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  opacity: 0.85;
+  font-size: 1.2rem ;
 }
 
 /* SECTION STYLING */
