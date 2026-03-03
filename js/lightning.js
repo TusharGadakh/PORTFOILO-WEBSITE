@@ -4,8 +4,8 @@ window.addEventListener("load", () => {
   if (!canvas) return;
 
   const resizeCanvas = () => {
-    canvas.width = canvas.clientWidth;
-    canvas.height = canvas.clientHeight;
+    canvas.width = window.innerWidth;
+    canvas.height = document.body.scrollHeight;
   };
   resizeCanvas();
   window.addEventListener("resize", resizeCanvas);
