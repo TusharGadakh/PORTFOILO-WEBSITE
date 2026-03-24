@@ -1,225 +1,236 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tushar Gadakh | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="ccss/style.css" />
 </head>
 <body>
-   <canvas id="lightning-canvas"></canvas>
-  <header class="hero">
-    <div class="overlay">
-      <h1>Tushar Gadakh</h1>
-      <p>Crafting Code & Creativity | Tushar Gadakh</p>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">T<span>.</span>Gadakh</a>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#leetcode">LeetCode</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Available for opportunities</div>
+    <h1>Tushar<br /><span class="gradient-text">Gadakh</span></h1>
+    <p class="hero-sub">Crafting clean code & creative experiences. Full-stack developer who loves building things that matter.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View My Work ↓</a>
+      <a href="#contact" class="btn-ghost">Get In Touch →</a>
     </div>
-  </header>
+  </div>
+</section>
 
- 
+<div class="divider"></div>
 
-  <section class="projects" data-aos="fade-up">
-    <h2>Projects</h2>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">Work</div>
+  <h2 class="reveal">Featured Projects</h2>
+  <p class="section-desc reveal">Handpicked builds that show what I've been creating.</p>
+  <div class="projects-grid">
 
-    <div class="projects-grid">
-      <!-- Project 1: Coupon Trading Website -->
-      <div class="project-card">
-        <div class="project-image">
-          <div class="image-placeholder">🎫</div>
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Coupon Trading Website</h3>
-          <p class="project-desc">Built using Hostinger's tools and custom functions to allow users to trade and redeem coupons easily. Features real-time updates and secure transactions.</p>
-          <div class="tech-stack">
-            <span class="tech-tag">HTML/CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Hostinger</span>
-            <span class="tech-tag">MySQL</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link">Live Demo →</a>
-            <a href="#" class="project-link">GitHub →</a>
-          </div>
-        </div>
+    <div class="project-card reveal">
+      <span class="project-icon">🎫</span>
+      <h3>Coupon Trading Website</h3>
+      <p>Built using Hostinger's tools and custom functions to allow users to trade and redeem coupons easily. Features real-time updates and secure transactions.</p>
+      <div class="tags">
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Hostinger</span>
+        <span class="tag">MySQL</span>
       </div>
-
-      <!-- Project 2: Home Renting Website -->
-      <div class="project-card">
-        <div class="project-image">
-          <div class="image-placeholder">🏠</div>
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Home Renting Website</h3>
-          <p class="project-desc">Designed to help users find rental homes with advanced search filters, property listings, and booking system. Currently under active development.</p>
-          <div class="tech-stack">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">MongoDB</span>
-            <span class="tech-tag">Express</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link">In Progress</a>
-            <a href="https://github.com/TusharGadakh" class="project-link">GitHub →</a>
-          </div>
-        </div>
+      <div class="project-links">
+        <a href="#" class="link-btn primary">Live Demo ↗</a>
+        <a href="#" class="link-btn">GitHub →</a>
       </div>
     </div>
 
-    <!-- USER NOTE: To add more projects, duplicate a project-card div above and update:
-         - Icon/emoji in image-placeholder
-         - project-title
-         - project-desc
-         - tech-tag items
-         - project-link URLs
-    -->
-  </section>
-   <!-- LeetCode Stats Section -->
-  <section class="leetcode" data-aos="fade-up">
-    <h2>LeetCode Stats</h2>
-
-    <!-- Main Stats Grid -->
-    <div class="leetcode-stats-grid">
-      <div class="stat-card">
-        <div class="stat-number">247</div>
-        <div class="stat-label">Problems Solved</div>
+    <div class="project-card reveal">
+      <span class="project-icon">🏠</span>
+      <h3>Home Renting Website</h3>
+      <p>Designed to help users find rental homes with advanced search filters, property listings, and a booking system. Currently under active development.</p>
+      <div class="tags">
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">Express</span>
       </div>
-      <div class="stat-card">
-        <div class="stat-number">1850</div>
-        <div class="stat-label">Rating</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">45</div>
-        <div class="stat-label">Days Streak</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number">Top 15%</div>
-        <div class="stat-label">Global Rank</div>
+      <div class="project-links">
+        <a href="#" class="link-btn primary">In Progress 🚧</a>
+        <a href="https://github.com/TusharGadakh" class="link-btn">GitHub →</a>
       </div>
     </div>
 
-    <!-- Difficulty Breakdown -->
-    <div class="leetcode-difficulty">
-      <div class="difficulty-card easy">
-        <div class="difficulty-number">15</div>
-        <div class="difficulty-label">Easy</div>
-      </div>
-      <div class="difficulty-card medium">
-        <div class="difficulty-number">5</div>
-        <div class="difficulty-label">Medium</div>
-      </div>
-      <div class="difficulty-card hard">
-        <div class="difficulty-number">2</div>
-        <div class="difficulty-label">Hard</div>
-      </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- LEETCODE -->
+<section id="leetcode">
+  <div class="section-label reveal">Competitive Coding</div>
+  <h2 class="reveal">LeetCode Stats</h2>
+  <p class="section-desc reveal">Consistent problem solving, one day at a time.</p>
+  <div class="stats-grid">
+    <div class="stat-card reveal">
+      <span class="stat-num accent">247</span>
+      <span class="stat-label">Problems Solved</span>
     </div>
-
-    <!-- USER NOTE: Update the numbers above with your actual LeetCode stats -->
-  </section>
-
-  <section class="skills" data-aos="fade-up">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>C++</li>
-      <li>HTML/CSS/JS</li>
-      <li>Flask (learning)</li>
-      <li>Git & GitHub</li>
-      <li>Hostinger</li>
-      <li>VS Code</li>
-    </ul>
-  </section>
-
-  <!-- Certificates Section -->
-  <section class="certificates" data-aos="fade-up">
-    <h2>Certificates</h2>
-
-    <div class="certificates-grid">
-      <!-- Certificate 1 -->
-      <div class="cert-card">
-        <div class="cert-image">
-          <div class="cert-icon">🎓</div>
-        </div>
-        <div class="cert-content">
-          <h3 class="cert-title">Python for Data Science</h3>
-          <p class="cert-issuer">Coursera</p>
-          <p class="cert-date">January 2024</p>
-          <a href="#" class="cert-link">View Certificate →</a>
-        </div>
-      </div>
-
-      <!-- Certificate 2 -->
-      <div class="cert-card">
-        <div class="cert-image">
-          <div class="cert-icon">💻</div>
-        </div>
-        <div class="cert-content">
-          <h3 class="cert-title">Web Development Bootcamp</h3>
-          <p class="cert-issuer">Udemy</p>
-          <p class="cert-date">December 2023</p>
-          <a href="#" class="cert-link">View Certificate →</a>
-        </div>
-      </div>
-
-      <!-- Certificate 3 -->
-      <div class="cert-card">
-        <div class="cert-image">
-          <div class="cert-icon">☁️</div>
-        </div>
-        <div class="cert-content">
-          <h3 class="cert-title">Cloud Computing Fundamentals</h3>
-          <p class="cert-issuer">AWS</p>
-          <p class="cert-date">November 2023</p>
-          <a href="#" class="cert-link">View Certificate →</a>
-        </div>
-      </div>
+    <div class="stat-card reveal">
+      <span class="stat-num">1850</span>
+      <span class="stat-label">Rating</span>
     </div>
-
-    <!-- USER NOTE: Replace the certificates above with your actual certificates
-         Update: cert-title, cert-issuer, cert-date, cert-link href
-         Icons: Use emoji (🎓, 📜, ⚡, 🔒, 💡, etc.)
-         To add more: Duplicate a cert-card div and update the content
-    -->
-  </section>
-
-  <section class="resume" data-aos="fade-up">
-    <h2>Resume</h2>
-    <div class="resume-content">
-      <p class="resume-text">Download my resume to learn more about my experience, education, and qualifications.</p>
-      <a href="./resume.pdf" class="download-btn" download>Download Resume (PDF) ↓</a>
+    <div class="stat-card reveal">
+      <span class="stat-num green">45</span>
+      <span class="stat-label">Days Streak</span>
     </div>
-    <!-- USER NOTE: Add your resume.pdf file to the project root directory, or update the href to your hosted resume URL -->
-  </section>
-
-  <section class="contact" data-aos="fade-up">
-    <h2>Contact</h2>
-
-    <div class="contact-grid">
-      <!-- Email Card -->
-      <div class="contact-card">
-        <div class="contact-icon">📧</div>
-        <div class="contact-label">Email</div>
-        <a href="mailto:tushargadakh1106@gmail.com" class="contact-link">tushargadakh1106@gmail.com</a>
-      </div>
-
-      <!-- GitHub Card -->
-      <div class="contact-card">
-        <div class="contact-icon">💻</div>
-        <div class="contact-label">GitHub</div>
-        <a href="https://github.com/TusharGadakh" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/TusharGadakh</a>
-      </div>
+    <div class="stat-card reveal">
+      <span class="stat-num pink">Top 15%</span>
+      <span class="stat-label">Global Rank</span>
     </div>
+    <div class="stat-card reveal">
+      <span class="stat-num green">15</span>
+      <span class="stat-label">Easy</span>
+    </div>
+    <div class="stat-card reveal">
+      <span class="stat-num accent">5</span>
+      <span class="stat-label">Medium</span>
+    </div>
+    <div class="stat-card reveal">
+      <span class="stat-num pink">2</span>
+      <span class="stat-label">Hard</span>
+    </div>
+  </div>
+</section>
 
-    <!-- USER NOTE: You can add more contact cards (LinkedIn, Twitter, Portfolio) by duplicating the contact-card structure above -->
-  </section>
+<div class="divider"></div>
 
-  <footer>
-    <p>&copy; 2025 Tushar Gadakh</p>
-  </footer>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label reveal">What I Know</div>
+  <h2 class="reveal">Skills & Tools</h2>
+  <p class="section-desc reveal">Technologies I work with day to day.</p>
+  <div class="skills-wrapper">
+    <div class="skill-pill reveal"><span class="skill-dot"></span>Python</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>C++</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>HTML/CSS</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>JavaScript</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>Flask</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>Git & GitHub</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>Hostinger</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>VS Code</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>React</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>Node.js</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>MongoDB</div>
+    <div class="skill-pill reveal"><span class="skill-dot"></span>MySQL</div>
+  </div>
+</section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-<!-- <script src="js/lightning.js"></script>   -->
+<div class="divider"></div>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="section-label reveal">Credentials</div>
+  <h2 class="reveal">Certificates</h2>
+  <p class="section-desc reveal">Courses and programs I've completed.</p>
+  <div class="certs-grid">
+    <a href="#" class="cert-card reveal">
+      <div class="cert-icon">🎓</div>
+      <div class="cert-info">
+        <h4>Python for Data Science</h4>
+        <p>Coursera · January 2024</p>
+      </div>
+      <span class="cert-arrow">↗</span>
+    </a>
+    <a href="#" class="cert-card reveal">
+      <div class="cert-icon">💻</div>
+      <div class="cert-info">
+        <h4>Web Development Bootcamp</h4>
+        <p>Udemy · December 2023</p>
+      </div>
+      <span class="cert-arrow">↗</span>
+    </a>
+    <a href="#" class="cert-card reveal">
+      <div class="cert-icon">☁️</div>
+      <div class="cert-info">
+        <h4>Cloud Computing Fundamentals</h4>
+        <p>AWS · November 2023</p>
+      </div>
+      <span class="cert-arrow">↗</span>
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- RESUME -->
+<section id="resume">
+  <div class="resume-card reveal" style="margin: 0 auto;">
+    <div class="resume-icon">📄</div>
+    <h3>My Resume</h3>
+    <p>Download to learn more about my experience, education, and qualifications.</p>
+    <a href="https://tushar-gadakh-portfolio.vercel.app/resume.pdf" class="btn-primary">Download Resume ↓</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label reveal">Let's talk</div>
+  <h2 class="reveal">Get In Touch</h2>
+  <p class="section-desc reveal">Feel free to reach out — I'm always open to new opportunities and collaborations.</p>
+  <div class="contact-grid">
+    <a href="mailto:tushargadakh1106@gmail.com" class="contact-card reveal">
+      <div class="contact-icon">📧</div>
+      <div class="contact-text">
+        <strong>Email</strong>
+        <span>tushargadakh1106@gmail.com</span>
+      </div>
+    </a>
+    <a href="https://github.com/TusharGadakh" target="_blank" class="contact-card reveal">
+      <div class="contact-icon">💻</div>
+      <div class="contact-text">
+        <strong>GitHub</strong>
+        <span>github.com/TusharGadakh</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 Tushar Gadakh</span>
+  <span>Built with ❤️</span>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
-
